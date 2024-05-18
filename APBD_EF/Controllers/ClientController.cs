@@ -15,7 +15,7 @@ namespace APBD_EF.Controllers
             _clientService = clientService;
         }
 
-        [HttpDelete("/api/clients/{idClient}")]
+        [HttpDelete("clients/{idClient}")]
         public IActionResult DeleteClientData(int idClient)
         {
             var result = _clientService.DeleteClientData(idClient);
